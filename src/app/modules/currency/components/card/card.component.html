@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="card_header">{{ currency.name }}</div>
+
+  @if (currencyData) {
+  <div class="card_content currency">
+    <p
+      [ngClass]="{
+        high: currencyData.bid > 5,
+        medium: currencyData.bid > 1 && currencyData.bid < 5,
+        low: currencyData.bid <= 1
+      }"
+    >
+      {{ (currencyData.bid | currency : "BRL" : true)?.replace(".", ",") }}
+    </p>
+  </div>
+  <div class="card_footer">
+    <div class="card_footer_item">
+      <div class="card_footer_title">Variação (%)</div>
+      <div class="card_footer_value">
+        {{ currencyData.pctChange.toString().replace(".", ",") }}
+      </div>
+    </div>
+    <div class="card_footer_item">
+      <div class="card_footer_title">Atualizado</div>
+      <div class="card_footer_value">
+        {{ currencyData.create_date | date : "hh:mm:ss" }}
+      </div>
+    </div>
+  </div>
+  } @else {
+  <div class="card_content">
+    <img *ngIf="loading" src="../../../assets/img/loader.svg" alt="loader" />
+
+    <div *ngIf="error" class="card_content_error">
+      <p>Algo deu errado</p>
+      <button (click)="loadCurrency()">Recarregar</button>
+    </div>
+  </div>
+  }
+</div>

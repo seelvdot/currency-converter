@@ -1,0 +1,26 @@
+.container {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  
+  .currency-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 94px;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 1470px) {
+  .container {
+    .currency-group {
+      width: 100%;
+      grid-gap: 34px;
+      margin-top: 124px;
+      padding-bottom: 34px;
+      grid-template-columns: 1fr;
+    }
+  }
+}

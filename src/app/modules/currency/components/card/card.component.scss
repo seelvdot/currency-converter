@@ -1,0 +1,108 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 430px;
+  height: 428px;
+  border-radius: 10px;
+  background-color: var(--card-background);
+
+  > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_header {
+    height: 120px;
+    background-color: var(--card-header-background);
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--text-basic);
+    border-radius: 10px 10px 0 0;
+  }
+
+  &_content {
+    max-height: 308px;
+
+    &:not(.currency) {
+      height: 100%;
+    }
+
+    img {
+      width: 100px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 64px;
+      &.high {
+        color: var(--text-blue);
+      }
+      &.medium {
+        color: var(--text-green);
+      }
+      &.low {
+        color: var(--text-red);
+      }
+    }
+
+    &_error {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-weight: 400;
+        font-size: 26px;
+        color: var(--text-basic);
+      }
+
+      button {
+        width: 173px;
+        height: 58px;
+        margin-top: 25px;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--text-basic);
+        background-color: var(--button-background);
+        border-radius: 10px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+      }       
+    }
+  }
+
+  &_footer {
+    height: 112px;
+    border-top: 1px solid rgba(204, 204, 204, 0.5);
+
+    &_item {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &:first-child {
+        border-right: 1px solid rgba(204, 204, 204, 0.5);
+      }
+    }
+
+    &_title {
+      font-weight: 600;
+      font-size: 18px;
+      color: var(--text-secondary);
+    }
+
+    &_value {
+      font-weight: 600;
+      font-size: 24px;
+      color: var(--text-basic);
+    }
+  }
+}

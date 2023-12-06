@@ -1,27 +1,24 @@
 # CurrencyConverter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
+Este projeto consiste no desenvolvimento de uma aplicação direcionada para a exibição de cotações de moedas para Real (BRL). As cotações são atualizadas por um periodo de tempo definido e recorrente, validando também a existência de um cache já registrado.
 
-## Development server
+Ele foi desenvolvido com base no [Angular](https://angular.io/) em sua atual versão no momento (v17.0.5).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instalação
 
-## Code scaffolding
+Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clone este repositório:
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+2. Acesse a pasta raiz do repositório clonado e em um prompt de comando, faça a instação das dependências do projeto:
+```bash
+npm install
+```
+3. No mesmo prompt de comando, faça a iniciação do aplicativo em ambiente local:
+```bash
+npm start
+```
+Navegue para `http://localhost:4200/`. Caso você faça qualquer alteração nos arquivos do projeto, o navergador irá atualizar de forma automática.
