@@ -11,7 +11,7 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/seelvdot/currency-converter.git
 ```
 2. Acesse a pasta raiz do repositório clonado e em um prompt de comando, faça a instação das dependências do projeto:
 ```bash
