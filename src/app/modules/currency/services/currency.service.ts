@@ -7,7 +7,7 @@ import { eCurrency } from '../data/currency';
 })
 export class CurrencyService {
 
-  url = 'https://economia.awesomeapi.com.br/json/';
+  url = 'https://economia.awesomeapi.com.br/json';
 
   constructor(private httpClient: HttpClient) { }
 
